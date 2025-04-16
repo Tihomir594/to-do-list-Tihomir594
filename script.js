@@ -10,8 +10,11 @@ const todocontainer = document.getElementById('todocontainer');
 
 //Creates tasks//
     function todoList() {
+      //item variable is assigned user input//
     var item = document.getElementById("todoInput").value;
+    //creates text using user input//
     var text = document.createTextNode(item);
+    //makes it into a ordered list//
     var newItem = document.createElement("li");
     newItem.appendChild(text);
     document.getEementById("todoList").appendChild(newItem);
